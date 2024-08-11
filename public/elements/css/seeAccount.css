@@ -1,0 +1,48 @@
+* {
+    --page-margin: 300px
+}
+
+#textInfos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#userPseudo {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--page-margin);
+}
+
+#userInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#userLogo {
+    border-radius: 360px;
+    width: 250px;
+    height: 250px;
+    margin-right: var(--page-margin);
+}
+
+#userTexts {
+    margin-top: 50px;
+    border-style: solid;
+
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}

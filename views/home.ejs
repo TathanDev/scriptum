@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="elements/css/home.css" rel="stylesheet">
+    <link href="elements/css/general.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/elements/img/logo.ico">
+
+    <title>Scriptum</title>
+</head>
+<body onload="setLatestText()">
+    <%- include('./components/header'); -%>
+
+
+    <div id="content">
+        <div id="logoDiv" class="blur">
+            <img src="elements/img/logo.png" width="250px">
+        </div>
+        <div id="demoText">
+            <h1 class="centertext"> Partagez vos textes !</h2>
+            <div class="centerDiv">
+                <h2>Découvrez des textes de personnes du monde entier !</h2>
+                <br>
+            </div>
+            <div id="buttons" class="centerDiv">
+                <a href="add-text"><button>Ajoute ton chef d'oeuvre</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <%- include('./components/footer'); -%> -->
+    <script src="elements/js/home.js"></script>
+</body>
+</html>

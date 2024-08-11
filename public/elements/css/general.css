@@ -1,0 +1,175 @@
+p {
+    white-space: pre-wrap;
+
+}
+
+header {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+body {
+    margin: auto;
+    background-size: cover;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+button {
+    padding: 30px;
+    border-radius: 2px;
+    color: black;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+    transition: 0.25s;
+
+}
+
+button:hover,
+button:focus {
+  box-shadow: inset 0 -3.25em 0 0 black;
+  color: rgb(255, 255, 255);
+
+}
+
+  
+.textsCenteredInDiv {
+
+    text-align: center;
+}
+
+
+
+.error {
+
+    color: red;
+}
+
+
+/** Header **/
+#header {
+
+    --stroke-width: calc(1em / 16);
+    --font-weight: 700;
+    --letter-spacing: ;
+  
+}
+
+#header {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+
+
+#header h1 {
+
+    font-size: 80px;
+    font-weight: 80px;
+    letter-spacing: calc(1em / 8);
+    padding: calc(calc(1em / 8) / 2);
+
+}
+
+#header h1:hover {
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 12);
+    cursor: pointer;
+}
+
+#header a {
+
+    text-decoration: none;
+    color: black;
+}
+
+#connexion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#connexion a {
+    margin-top: 10px;
+}
+
+/** TextComponent **/
+
+.textBox {
+    margin: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+#infosBox {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textBox #content {
+
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  box-shadow: inset 0 -3.25em 0 0 black;
+  color: rgb(255, 255, 255);
+
+}
+
+input[type="submit"] {
+    padding: 30px;
+    border-radius: 2px;
+    color: black;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+    transition: 0.25s;
+
+}
+
+/** Footer */
+
+#footer {
+    position:absolute; 
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    justify-content: space-between;
+    row-gap: 30px;
+    background-color: #ffffff;
+}

@@ -1,0 +1,74 @@
+
+header {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+body {
+    margin: auto;
+}
+
+#menuButton {
+    align-self: left;
+}
+ 
+
+#logoDiv {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+ 
+}
+
+#logoDiv img {
+    animation-name: logoAnim;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#demoText {
+    border-style: solid;
+
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+.links {
+    color: black;
+    background-color: white;
+    padding: auto;
+    border-radius: 8px;
+}
+
+.links:hover {
+    color: black;
+    background: var(--background-linear-1);
+    background: var(--background-linear-2);  
+
+    padding: auto;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
+
+@keyframes logoAnim {
+    0%   {top:-20px;}
+    50%  {top:50px;}
+    100% {top:-20px;}
+  }
+  

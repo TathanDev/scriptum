@@ -1,0 +1,37 @@
+#loginDiv {
+    background-color: #ffffff;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+
+    width: 300px;
+}
+
+#formContainer {
+
+    display: flex;
+    justify-content: center;
+    height: 380px;
+}
+#form {
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+.textInput {
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+
+input[type="checkbox"] {
+    border-color: aliceblue;
+    border-style: solid;
+    transform: scale(2);
+
+}

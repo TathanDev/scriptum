@@ -1,0 +1,23 @@
+<div id="footer">
+    <button onclick="disconnect()">Disconnect</button>
+</div>
+<script>
+
+function disconnect() {
+
+    
+    fetch(`/user/logout` , {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then((response) => response.json())
+        .then((response) => {
+            document.location.href = "../home"
+
+        })
+
+}
+
+</script>

@@ -1,0 +1,40 @@
+
+#form {
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    margin-left: 20px;
+}
+
+.textInput {
+    align-self: left;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+#basicInfos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input[type="checkbox"] {
+    border-color: aliceblue;
+    border-style: solid;
+    transform: scale(2);
+}
+
+select {
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    margin-right: 20px;
+    justify-items: center;
+}
+
+textarea { 
+    width: 99%;
+    height: 150px;
+}

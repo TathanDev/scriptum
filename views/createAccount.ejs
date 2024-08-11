@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="elements/css/general.css" rel="stylesheet">
+    <link href="elements/css/createAccount.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/elements/img/logo.ico">
+
+    <title>Create an account</title>
+</head>
+<body>
+    <%- include('./components/header'); -%>
+
+    <h1 class="centertext">Create an account</h1>
+    <div id="formContainer">
+        <div class="centerDiv textsCenteredInDiv" id="accountCreateDiv">
+            <form action="" method="post" id="#form">
+                <div id="pseudo">
+                    <h2 id="pseudoText">Pseudo</h2>
+                    <input type="text" name="pseudo" class="textInput" id="pseudoInput" required> <br>
+        
+                </div>
+                <div id="email">
+                    <h2>Email</h2>
+                    <input type="email" name="email" class="textInput"> <br>
+        
+                </div>
+                <div id="password">
+                    <h2>Password</h2>
+                    <input type="password" name="password" class="textInput" required><br>
+        
+                </div>
+                <div id="condition">
+                    <h2>Term and Condition of Use</h2>
+                    <input type="checkbox" name="condition" required>    
+                </div>
+                <br>
+                <input type="submit" id="submit">
+            </form>
+
+        </div>
+     </div>
+
+    <script src="elements/js/createAccount.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="elements/css/addText.css" rel="stylesheet">
+    <link href="elements/css/general.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/elements/img/logo.ico">
+
+    <title>Add a text </title>
+</head>
+<body>
+    <%- include('./components/header'); -%>
+
+    <h1 class="centertext">Add a Joke</h1>
+    <div>
+        <div id="form">
+            <div id="basicInfos">
+                <div id="texTitle">
+                    <h2>Title</h2>
+                    <input class="textInput" type="text" id="title">
+                </div>
+                <div>
+                    <select name="Type" id="type">
+                        <option value="Poems">Poème</option>
+                        <option value="Story">Histoire/Nouvelle</option>
+                        <option value="Music" selected>Musique</option>
+                        <option value="Joke" selected>Blague</option>
+                        <option value="Theater" selected>Théâtre</option>
+                        <option value="Other" selected>Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div id="textContent">
+                <h2>Joke Answer</h2>
+                <textarea type="text" id="content" name="text" class="textInput"> </textarea>
+            </div>
+            <button onclick="submitText()">Submit</button>
+        </div>
+    </div>
+
+    <script src="elements/js/addText.js"></script></html>

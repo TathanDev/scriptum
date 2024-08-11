@@ -1,0 +1,33 @@
+<header class="centerDiv" id="header">
+    <div>
+        <% if(!cookieUser) { %>
+            <a href="../login"><button >Connection</button></a>
+        <% } else { %>
+            <a href="../add-text"><button>Ajouter un texte</button></a>
+        <% } %>
+    </div>
+    <a href="../home"><h1>Scriptum</h1></a>
+    <div>
+        <% if(!cookieUser) { %>
+            <a href="../register"><button>Créer un compte</button></a>
+        <% } else { %>
+            <a onclick="onClick()"><button>Mon Compte</button></a>
+        <% } %>
+    </div>
+    <script>
+        function onClick() {
+            var user = '<%= cookieUser %>'
+
+            fetch("/api/get-userid/" + user, {
+                method: "GET",
+                headers: {
+                "Content-Type": "application/json"
+                },
+            })
+            .then((response) => response.json())
+            .then((response) => {
+                document.location.href = "../account/" + response.userId
+            })
+        }
+    </script>
+</header>
