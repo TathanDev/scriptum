@@ -4,6 +4,8 @@ import { accueil, createAccount, createDocumentation, login, addText, seeText, s
 const router = express.Router()
 
 router.get("/home", accueil)
+router.get("", accueil)
+
 router.get("/register", createAccount)
 router.get("/login", login)
 router.get("/add-text", addText)
