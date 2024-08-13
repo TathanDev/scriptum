@@ -36,6 +36,8 @@ h1 {
     width: 250px;
     height: 250px;
     margin-right: var(--page-margin);
+    transition: 1s;
+
 }
 
 #userTexts {
@@ -45,4 +47,12 @@ h1 {
     border-radius: 8px;
     background-color: #ffffff;
     padding-bottom: 10px;
+}
+
+
+#userLogo:hover {
+    filter: drop-shadow(0 0 20px rgb(240, 61, 97));
+    cursor: pointer;
+
+    transition: 1s;
 }

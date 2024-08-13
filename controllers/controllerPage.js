@@ -42,3 +42,8 @@ export const seeAccount = (req, res) => {
 
     res.render("seeAccount.ejs", { cookieUser: req.cookies.user, userId: req.params.id})
 }
+
+export const browseText = (req, res) => {
+
+    res.render("browseText.ejs", { cookieUser: req.cookies.user})
+}

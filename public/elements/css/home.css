@@ -64,11 +64,13 @@ body {
     filter: drop-shadow(0 0 0.75rem crimson);
 }
 
-
+#buttons {
+    gap: 10px;
+}
 
 @keyframes logoAnim {
     0%   {top:-20px;}
     50%  {top:50px;}
     100% {top:-20px;}
-  }
+}
   

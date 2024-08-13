@@ -173,3 +173,13 @@ input[type="submit"] {
     row-gap: 30px;
     background-color: #ffffff;
 }
+
+#firstButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+#firstButtons:last-child {
+    margin-top: 10px;
+}
+

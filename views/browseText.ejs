@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="elements/css/browseText.css" rel="stylesheet">
+    <link href="elements/css/general.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/elements/img/logo.ico">
+
+    <title>Add a text </title>
+</head>
+<body>
+    <%- include('./components/header'); -%>
+    <div id="content">
+        <div id="browseParams">
+            <div id="options">
+                <h3>Options</h3>
+                <input type="radio" name="type" value="Poems" checked>
+                <label>Poème</label> <br>
+
+                <input type="radio" name="type" value="Story">
+                <label>Histoire</label> <br>
+
+                <input type="radio" name="type" value="Music">
+                <label>Musique</label> <br>
+
+                <input type="radio" name="type" value="Joke">
+                <label>Blague</label> <br>
+
+                <input type="radio" name="type" value="Theater">
+                <label>Théâtre</label> <br>
+
+                <input type="radio" name="type" value="Other">
+                <label>Autre</label> <br>
+
+            </div>
+            <button id="searchButton" onclick="browse()">Rechercher</button>
+        </div>
+        <div id="results">
+            
+        </div>
+    </div>
+
+    <script src="elements/js/browseText.js"></script></html>

@@ -1,0 +1,43 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+    border-color: black;
+    border-style: solid;
+}
+
+#browseParams {
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    border-style: solid;
+    margin: 20px;
+}
+
+#searchButton {
+    margin: 30px;
+}
+
+#options {
+    text-align: center;
+}
+
+input {
+    margin-top: 20px;
+}
+
+
+
+.infosBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.textBox #content {
+
+    margin-left: 20px;
+}

@@ -58,3 +58,15 @@ export const getUserId = async (req, res) => {
 
 };
 
+export const getTexts = async (req, res) => {
+
+  const type = req.params.type
+  
+  req.Text.findAll({ where: { text_type: type } })
+      .then((texts) => {
+        res.json({texts, textsExist: true})
+      })
+      .catch((error) =>
+        res.status(404).json({ textsExist: false, error: error })
+      );
+};

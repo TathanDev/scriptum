@@ -17,12 +17,27 @@
             <h1 id="pseudo">Pseudo</h1>
             <h1 id="id">Id</h2>
         </div>
-        <img id="userLogo" src="/elements/img/user-icon.png">
+        <img onclick="disconnect()" id="userLogo" src="/elements/img/user-icon.png"></img>
     </div>
     <div id="userTexts">
     </div>
-    <%- include('./components/footer'); -%>
 
     <script src="/elements/js/seeAccount.js"></script>
 </body>
+<script>
+
+    function disconnect() { 
+        fetch(`/user/logout` , {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then((response) => response.json())
+            .then((response) => {
+                document.location.href = "../home"
+            })
+    }
+    
+    </script>
 </html>
