@@ -3,14 +3,12 @@ import dotenv from 'dotenv'
 import path from 'path'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-import { json } from 'sequelize'
 import router from "./routers/routerPage.js"
 import { accessibilityDB } from './middlewares/accessibilityDB.js'
 import db from './db/db.js'
 import routeurUser from './routers/routerUser.js'
 import routeurText from './routers/routerText.js'
 import apiRouteur from './routers/routeurApi.js'
-import { tokenJWT } from './middlewares/getIdFromToken.js'
 
 
 dotenv.config()
