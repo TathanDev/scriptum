@@ -2,6 +2,12 @@
     --page-margin: 300px
 }
 
+body {
+    margin: auto;
+    background-color: var(--main-color);
+    color:  var(--second-color);;
+}
+
 #textInfos {
     display: flex;
     justify-content: space-between;
@@ -45,7 +51,7 @@ h1 {
     border-style: solid;
 
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     padding-bottom: 10px;
 }
 

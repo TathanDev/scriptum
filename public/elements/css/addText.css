@@ -7,9 +7,16 @@
     margin-left: 20px;
 }
 
+body {
+    margin: auto;
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+
+
 .textInput {
     align-self: left;
-    border-color: rgb(0, 0, 0);
+    border-color:  var(--second-color);
     border-style: solid;
     border-radius: 2px;
     font-size: 20px;
@@ -22,13 +29,13 @@
 
 
 input[type="checkbox"] {
-    border-color: aliceblue;
+    border-color: var(--main-color);
     border-style: solid;
     transform: scale(2);
 }
 
 select {
-    border-color: rgb(0, 0, 0);
+    border-color:  var(--second-color);
     border-style: solid;
     margin-right: 20px;
     justify-items: center;

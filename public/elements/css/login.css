@@ -1,8 +1,15 @@
+body {
+    margin: auto;
+    background-color: var(--main-color);
+    color:  var(--second-color);;
+}
+
+
 #loginDiv {
-    background-color: #ffffff;
+    background-color: var(--main-color);
     border-radius: 2px;
     border-style: solid;
-    border-color: black;
+    border-color: var(--second-color);
     display: block;
 
     width: 300px;
@@ -22,7 +29,7 @@
 }
 
 .textInput {
-    border-color: rgb(0, 0, 0);
+    border-color: var(--second-color);
     border-style: solid;
     border-radius: 8px;
     font-size: 20px;
@@ -30,7 +37,7 @@
 
 
 input[type="checkbox"] {
-    border-color: aliceblue;
+    border-color: var(--main-color);
     border-style: solid;
     transform: scale(2);
 

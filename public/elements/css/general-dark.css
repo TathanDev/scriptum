@@ -1,6 +1,6 @@
 * {
-    --main-color: white;
-    --second-color: black;
+    --main-color: rgb(34, 34, 34);
+    --second-color: white;
 }
 
 
@@ -119,6 +119,8 @@ button:focus {
 }
 
 #connexion {
+    display: flex;
+    flex-direction: column;
     
 }
 

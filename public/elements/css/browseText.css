@@ -4,14 +4,14 @@
     text-align: center;
 
 
-    border-color: black;
+    border-color: var(--second-color);
     border-style: solid;
 }
 
 #browseParams {
     display: flex;
     flex-direction: column;
-    border-color: black;
+    border-color: var(--second-color);
     border-style: solid;
     margin: 20px;
 }

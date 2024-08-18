@@ -7,6 +7,7 @@ header {
 
 body {
     margin: auto;
+    background-color: var(--main-color);
 }
 
 #menuButton {
@@ -31,9 +32,9 @@ body {
 
 #demoText {
     border-style: solid;
-
+    color: var(--second-color);
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     padding-bottom: 10px;
 }
 
@@ -48,14 +49,14 @@ body {
 
 
 .links {
-    color: black;
-    background-color: white;
+    color: var(--second-color);
+    background-color: var(--main-color);
     padding: auto;
     border-radius: 8px;
 }
 
 .links:hover {
-    color: black;
+    color: var(--second-color);
     background: var(--background-linear-1);
     background: var(--background-linear-2);  
 
