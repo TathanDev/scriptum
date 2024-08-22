@@ -1,6 +1,5 @@
 
 #form {
-
     display: flex;
     flex-direction: column;
     column-gap: 30px;
@@ -20,6 +19,17 @@ body {
     border-style: solid;
     border-radius: 2px;
     font-size: 20px;
+    color: var(--second-color);
+    background-color: var(--main-color);;
+
+}
+
+#type {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--second-color);
+    background-color: var(--main-color);
 }
 
 #basicInfos {

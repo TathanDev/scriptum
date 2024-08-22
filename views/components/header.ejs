@@ -6,89 +6,14 @@
             <a href="../add-text"><button>Ajouter un texte</button></a>
         <% } %>
     </div>
-    <a href="../home" onload="onLoad()"><h1>Scriptum</h1></a>
+    <a href="../home"><h1>Scriptum</h1></a>
     <div id="secondsButtons">
         <% if(!cookieUser) { %>
             <a href="../register"><button>Créer un compte</button></a>
         <% } else { %>
-            <a onclick="onClick()"><button>Mon Compte</button></a>
+            <a onclick="onClick('<%= cookieUser %>')"><button>Mon Compte</button></a>
         <% } %>
         <a ><button id="modeButton" onclick="toggleMode()">☀️</button></a>
     </div>
-    <script>
-
-        window.document.onload = function(e){ 
-            console.log("yeaa")
-        }
-
-        var mode = "dark";
-
-        function toggleMode() {
-            let stylesheet = document.getElementById("stylesheetMode");
-            let button = document.getElementById("modeButton");
-
-            let href;
-            if (stylesheet.href.includes("/element/")) {
-                href = "elements/css/general"
-            } else {
-                href = "/elements/css/general"
-            }
-
-            if (mode === "light") {
-                stylesheet.href = `${href}-dark.css`
-                button.textContent = "☀️";
-                mode = "dark";
-                setModeCookie("dark")
-
-            } else {
-                stylesheet.href = `${href}.css`
-                button.textContent = "🌙";
-                setModeCookie("light")
-                mode = "light";
-            }
-        }
-
-        function setModeCookie(cvalue) {
-            document.cookie = "mode" + "=" + cvalue + ";path=/";
-        }
-
-        function getCookie(cname) {
-            let name = cname + "=";
-            let ca = document.cookie.split(';');
-
-            for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-
-        function onLoad() {
-            console.log("eee")
-            mode = getCookie("mode");
-            toggleMode();
-            toggleMode();
-        }
-
-        function onClick() {
-            var user = '<%= cookieUser %>'
-
-            fetch("/api/get-userid/" + user, {
-                method: "GET",
-                headers: {
-                "Content-Type": "application/json"
-                },
-            })
-            .then((response) => response.json())
-            .then((response) => {
-                document.location.href = "../account/" + response.userId
-            })
-        }
-
-    </script>
 </header>
+<script src="/elements/js/header.js"></script>

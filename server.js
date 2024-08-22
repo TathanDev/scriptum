@@ -13,7 +13,7 @@ import apiRouteur from './routers/routeurApi.js'
 
 dotenv.config()
 
-const PORT = 8100
+const PORT = 25568
 const app = express()
 
 app.use(
