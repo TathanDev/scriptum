@@ -1,19 +1,50 @@
 <header class="centerDiv" id="header" >
+    
+
     <div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
+
         <% if(!cookieUser) { %>
-            <a href="../login"><button >Connection</button></a>
+            <a class="header" href="../login"><button >Connection</button></a>
         <% } else { %>
-            <a href="../add-text"><button>Ajouter un texte</button></a>
+            <a class="header" href="../add-text"><button>Ajouter un texte</button></a>
         <% } %>
     </div>
     <a href="../home"><h1>Scriptum</h1></a>
-    <div id="secondsButtons">
+    <div class="header" id="secondsButtons">
         <% if(!cookieUser) { %>
-            <a href="../register"><button>Créer un compte</button></a>
+            <a class="header" href="../register"><button>Créer un compte</button></a>
         <% } else { %>
-            <a onclick="onClick('<%= cookieUser %>')"><button>Mon Compte</button></a>
+            <a class="header" onclick="onClick('<%= cookieUser %>')"><button>Mon Compte</button></a>
         <% } %>
-        <a ><button id="modeButton" onclick="toggleMode()">☀️</button></a>
+        <a class="header" ><button id="modeButton" onclick="toggleMode()">☀️</button></a>
     </div>
 </header>
+<div id="mySidenav" class="sidenav">
+    <a id="closeBtn" href="#" class="close">×</a>
+    <ul>
+      <li>
+        <% if(!cookieUser) { %>
+            <a class="header" href="../login">Connection</a>
+        <% } else { %>
+            <a class="header" href="../add-text">Ajouter un texte</a>
+        <% } %>
+      </li>
+      <li>
+        <% if(!cookieUser) { %>
+            <a class="header" href="../register">Créer un compte</a>
+        <% } else { %>
+            <a class="header" onclick="onClick('<%= cookieUser %>')">Mon Compte</a>
+        <% } %>
+      </li>
+      <li><a onclick="toggleMode()">Dark Mode</a></li>
+    </ul>
+  </div>
 <script src="/elements/js/header.js"></script>

@@ -19,6 +19,7 @@ export const addText = async (req, res) => {
         })
           .then((text) => {
             res.json({ textAdded: true, textId: text.text_id })
+            
           })
           .catch((error) =>
             res.json({ textAdded: false, reason: "", errorMsg: error })
@@ -32,4 +33,3 @@ export const addText = async (req, res) => {
     }
   })
 };
-
