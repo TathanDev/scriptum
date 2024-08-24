@@ -31,3 +31,19 @@ p {
 h1 {
     font-size: 40px;
 }
+
+@media screen and (max-width: 1000px) {
+    
+    #text {
+        margin: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: var(--second-color);
+        background-color: var(--main-color);
+        border-radius: 2px;
+        border-color: var(--second-color);
+        border-style: solid;
+    }
+    
+    
+}
