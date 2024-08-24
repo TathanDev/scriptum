@@ -45,5 +45,31 @@ h1 {
         border-style: solid;
     }
     
+    p a{
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
     
+    #text {
+        margin: 0px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    p {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
 }

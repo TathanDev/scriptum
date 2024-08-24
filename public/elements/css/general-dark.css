@@ -253,7 +253,9 @@ input[type="submit"] {
     margin: 6px 0;
   }
   
-
+#logo {
+    width: 250px;
+}
 
 @media screen and (max-width: 1000px) {
     
@@ -285,18 +287,39 @@ input[type="submit"] {
     }
 
     #header h1 {
-        font-size: 40px;
+        font-size: 60px;
         letter-spacing: calc(1em / 8);
         padding: calc(calc(1em / 8) / 2);
     
+    }
+
+    
+    #logo {
+        width: 150px;
+        height: 150px;
     }
 }
 
 
 @media screen and (max-width: 580px) {
 
+    #header h1 {
+        font-size: 40px;
+        letter-spacing: calc(1em / 8);
+        padding: calc(calc(1em / 8) / 2);
+    
+    }
+
     button {
         font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    button {
+        font-size: 10px;
     }
 
 }
