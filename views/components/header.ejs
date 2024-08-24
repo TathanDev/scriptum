@@ -32,18 +32,19 @@
     <ul>
       <li>
         <% if(!cookieUser) { %>
-            <a class="header" href="../login">Connection</a>
+            <a href="../login">Connection</a>
         <% } else { %>
-            <a class="header" href="../add-text">Ajouter un texte</a>
+            <a href="../add-text">Ajouter un texte</a>
         <% } %>
       </li>
       <li>
         <% if(!cookieUser) { %>
-            <a class="header" href="../register">Créer un compte</a>
+            <a href="../register">Créer un compte</a>
         <% } else { %>
-            <a class="header" onclick="onClick('<%= cookieUser %>')">Mon Compte</a>
+            <a onclick="onClick('<%= cookieUser %>')">Mon Compte</a>
         <% } %>
       </li>
+      <li><a href="../browse">Rechercher des textes</a></li>
       <li><br></li>
       <li><a onclick="toggleMode()" id="modeLink">Light Mode</a></li>
     </ul>

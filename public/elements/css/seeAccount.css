@@ -69,4 +69,32 @@ h1 {
         --page-margin: 70px
     }
     
+    h1 {
+        font-size: 20px;
+    }
+
+    #userLogo {
+        width: 150px;
+        height: 150px;
+
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    * {
+        --page-margin: 20px
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    #userLogo {
+        width: 150px;
+        height: 150px;
+
+    }
+    
 }
