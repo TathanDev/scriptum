@@ -5,6 +5,7 @@ var mode = "dark";
 function toggleMode() {
     let stylesheet = document.getElementById("stylesheetMode");
     let button = document.getElementById("modeButton");
+    let link = document.getElementById("modeLink")
 
     let href;
     if (stylesheet.href.includes("/element/")) {
@@ -16,12 +17,13 @@ function toggleMode() {
     if (mode === "light") {
         stylesheet.href = `${href}-dark.css`
         button.textContent = "☀️";
+        link.textContent = "Light Mode"
         mode = "dark";
         setModeCookie("dark")
-
     } else {
         stylesheet.href = `${href}.css`
         button.textContent = "🌙";
+        link.textContent = "Dark Mode"
         setModeCookie("light")
         mode = "light";
     }
