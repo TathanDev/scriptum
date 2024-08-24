@@ -241,7 +241,7 @@ input[type="submit"] {
     display: none;
     width: 35px;
     height: 5px;
-    background-color: var(--main-color);;
+    background-color: var(--second-color);
     margin: 6px 0;
   }
   
@@ -249,7 +249,7 @@ input[type="submit"] {
     width: 250px;
 }
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     
     .burger-icon span {
         display: block;
