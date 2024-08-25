@@ -2,6 +2,7 @@
 body {
     margin: auto;
     background-color: var(--main-color);
+    color: var(--second-color);
 }
 
 #text {
@@ -15,6 +16,14 @@ body {
     border-style: solid;
 }
 
+#share {
+    text-align: center;
+}
+
+#share:hover {
+    color: antiquewhite;
+    cursor: pointer;
+}
 
 #textInfos {
     display: flex;
