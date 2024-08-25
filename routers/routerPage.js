@@ -1,5 +1,5 @@
 import express from "express";
-import { accueil, createAccount, createDocumentation, login, addText, seeText, seeAccount, browseText } from "../controllers/controllerPage.js";
+import { accueil, createAccount, createDocumentation, login, addText, seeText, seeAccount, browseText, cgu } from "../controllers/controllerPage.js";
 
 const router = express.Router()
 
@@ -14,5 +14,6 @@ router.get("/doc", createDocumentation)
 router.get("/text/:id", seeText)
 router.get("/account/:id", seeAccount)
 router.get("/browse", browseText)
+router.get("/cgu", cgu)
 
 export default router

@@ -47,3 +47,8 @@ export const browseText = (req, res) => {
 
     res.render("browseText.ejs", { cookieUser: req.cookies.user})
 }
+
+export const cgu = (req, res) => {
+
+    res.render("cgu.ejs", { cookieUser: req.cookies.user})
+}
