@@ -23,5 +23,8 @@
   },
   "author": "Tathan",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
 }

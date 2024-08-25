@@ -2,3 +2,4 @@
 /db.sqlite
 /TODO
 node_modules
+/config

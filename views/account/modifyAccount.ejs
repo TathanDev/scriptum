@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/elements/css/seeAccount.css" type="text/css" rel="stylesheet">
+    <link href="/elements/css/general.css" type="text/css" rel="stylesheet" id="stylesheetMode">
+    <link rel="icon" type="image/x-icon" href="/elements/img/logo.ico">
+
+    <title id="title">Paramètre du Compte de </title>
+
+</head>
+<body onload="setInfos('<%= cookieUser %>')">
+    <%- include('../components/header'); -%>
+    <div id="userInfos" >
+
+        <form action="" method="post" id="form">
+            <div id="description">
+                <h2 id="pseudoText">Description</h2>
+                <input type="text" name="pseudo" class="textInput" id="descriptionField"> <br>
+    
+            </div>
+            <div id="url">
+                <h2>Lien de votre photo de profil</h2>
+                <input type="text" name="password" class="textInput" id="pfpField"><br>
+    
+            </div>
+            <br>
+            <input type="submit" id="submit" value="Sauvegarder">
+        </form>
+
+    </div>
+
+
+    <script src="/elements/js/modifyAccount.js"></script>
+</body>
+</html>

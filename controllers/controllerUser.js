@@ -75,3 +75,25 @@ export const logout = (req, res) => {
     res.json({deconnected: true})
 
 }
+
+
+export const updateUserInfos = async (req, res) => {
+
+
+    req.User.findOne({ 
+        where: {pseudo_user: req.body.userPseudo}
+    })
+    .then((user) => {
+        user.description_user = req.body.description_user
+        user.pfp_user = req.body.pfp_user
+
+        user.save();
+
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).json({ accountCreated: false, error: "Register in DB", msgErreur: error})    
+    })
+    
+
+}
