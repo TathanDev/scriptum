@@ -8,16 +8,29 @@ body {
     color:  var(--second-color);;
 }
 
-#textInfos {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
+
+#url {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    gap: 30px;
 }
 
-a {
-    text-decoration: none;
-    color: var(--second-color);
+#url button {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    font-size: 15px;
+    width: 300px;
+}
+
+
+textarea {
+    width: 600px;
+    height: 100px;
+    font-size: 20px;
 }
 
 p {
@@ -29,30 +42,16 @@ h1 {
     font-size: 40px;
 }
 
-#id {
-    white-space: pre-wrap;
-
-}
-
-#userPseudo {
-    display: flex;
-    flex-direction: column;
-    margin-left: var(--page-margin);
-}
-
 #userInfos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
-#userLogo {
+#pfpPreview {
     border-radius: 360px;
     width: 250px;
     height: 250px;
-    margin-right: var(--page-margin);
-    transition: 1s;
 }
 
 #userTexts {
@@ -82,7 +81,7 @@ h1 {
         font-size: 20px;
     }
 
-    #userLogo {
+    #pfpPreview {
         width: 150px;
         height: 150px;
 
@@ -90,7 +89,7 @@ h1 {
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 620px) {
     
     * {
         --page-margin: 20px
@@ -100,10 +99,39 @@ h1 {
         font-size: 20px;
     }
 
-    #userLogo {
+    #pfpPreview {
         width: 150px;
         height: 150px;
 
+    }
+
+    textarea {
+        width: 300px;
+        height: 100px;
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 510px) {
+    
+    textarea {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    #pfpPreview {
+        width: 100px;
+        height: 100px;
+
+    }
+    #url {
+        display:  flex;
+        flex-direction: column;
+    
+        gap: 30px;
     }
     
 }

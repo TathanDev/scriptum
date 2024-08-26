@@ -14,9 +14,9 @@ function setInfos(id) {
         document.title = user.pseudo_user
 
         document.getElementById("pseudo").innerHTML = `Pseudo : ${user.pseudo_user}`
-        document.getElementById("id").innerHTML = `User ID : ${user.id_user}`
-        
-        console.log(typeof(texts))
+        document.getElementById("id").innerHTML = `${user.description_user}`
+        document.getElementById("userLogo").src = `${user.pfp_user}`
+
         texts.forEach(element => {
             var text = element;
             
@@ -60,25 +60,5 @@ function setInfos(id) {
 
     })
 
-    var userIcon = document.getElementById("userLogo");
-    userIcon.src = `/elements/img/user-icon-${getCookie("mode")}.png`
 }
-
-
-function getCookie(cname) {
-    let name = cname + "=";
-    let ca = document.cookie.split(';');
-
-    for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
 

@@ -25,6 +25,18 @@ export default function (bdd) {
                 type: DataTypes.STRING(255),
                 allowNull: false
             },
+            description_user: {
+                type: DataTypes.STRING(255),
+               defaultValue: 'Lorem Ipsum 😎',
+                
+            },
+            pfp_user: {
+                type: DataTypes.STRING(255),
+               defaultValue: 'http://localhost:25568/elements/img/user-icon-dark.png',
+                
+            },
+
+
         },
         {
             tableName: "Users",

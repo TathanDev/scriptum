@@ -52,3 +52,11 @@ export const cgu = (req, res) => {
 
     res.render("cgu.ejs", { cookieUser: req.cookies.user})
 }
+
+export const modifyAccount = (req, res) => {
+    if(req.cookies.user) {
+       return res.render("account/modifyAccount.ejs", { cookieUser: req.cookies.user})
+    }
+    return res.redirect("/login")
+
+}

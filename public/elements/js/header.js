@@ -56,7 +56,6 @@ function onLoad() {
 }
 
 function onClick(user) {
-    console.log(user)
     fetch("/api/get-userid/" + user, {
         method: "GET",
         headers: {
