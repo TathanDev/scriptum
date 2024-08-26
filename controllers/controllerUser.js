@@ -88,11 +88,12 @@ export const updateUserInfos = async (req, res) => {
         user.pfp_user = req.body.pfp_user
 
         user.save();
+        res.status(200).json({ accountModified: true})
 
     })
     .catch((error) => {
         console.log(error)
-        res.status(500).json({ accountCreated: false, error: "Register in DB", msgErreur: error})    
+        res.status(500).json({ accountModified: false, error: error})
     })
     
 
