@@ -2,6 +2,7 @@ var descriptionField = document.getElementById("descriptionField")
 var pfpField = document.getElementById("pfpField")
 var pfpPreview = document.getElementById("pfpPreview")
 var errorField = document.getElementById("errorField")
+var submitButton = document.getElementById("submit")
 
 var userPseudo = ""
 var userId = ""
@@ -74,3 +75,31 @@ function updateImage() {
     pfpPreview.src = pfpField.value
 
 }
+
+descriptionField.addEventListener("input", (e) => {
+    if(e.target.value) {
+        if (descriptionField.value.length > 100) {
+            submitButton.disabled = true
+            errorField.innerHTML = "Votre description ne peut contenir plus de 100 caractères"
+        } else {
+            submitButton.disabled = false
+            errorField.innerHTML = ""
+
+        }
+    }
+})
+
+pfpField.addEventListener("input", (e) => {
+    if(e.target.value) {
+        console.log(pfpField.value.length)
+
+        if (!pfpField.value.includes("http")) {
+            submitButton.disabled = true
+            errorField.innerHTML = "\n Votre URL ne peut être vide ou ce n'est pas une url"
+        } else {
+            submitButton.disabled = false
+            errorField.innerHTML = ""
+
+        }
+    }
+})

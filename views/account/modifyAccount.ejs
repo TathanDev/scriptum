@@ -19,7 +19,7 @@
             <div id="url">
                 <div>
                     <h2>Lien de votre photo de profil</h2>
-                    <input type="text" name="password" class="textInput" id="pfpField"><br>
+                    <input type="url" name="password" class="textInput" id="pfpField"><br>
                     <button onclick="updateImage()">Preview</button>
                 </div>
                 <img src="/elements/img/logo.ico" id="pfpPreview">
@@ -31,8 +31,9 @@
             </div>
             <br>
             <button type="submit" id="submit" onclick="modifyAccount()">Sauvegarder</button>
+            <h3 id="errorField"></h3>
+
         </div>
-        <h3 id="errorField"></h3>
     </div>
 
 
