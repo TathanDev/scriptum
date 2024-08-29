@@ -32,7 +32,7 @@ export default function (bdd) {
             },
             pfp_user: {
                 type: DataTypes.STRING(255),
-               defaultValue: 'http://localhost:25568/elements/img/user-icon-dark.png',
+               defaultValue: 'http://scriptum.odysseyus.fr/elements/img/user-icon-dark.png',
                 
             },
 
